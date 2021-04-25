@@ -87,7 +87,7 @@ public class Player{
     System.out.println(player6.playerHand);
     System.out.println(player7.playerHand);**/
 
-    System.out.println(player2.playerHand);
+    //System.out.println(player2.playerHand);
     System.out.println();
     System.out.println();
     System.out.println(stock);
@@ -96,6 +96,7 @@ public class Player{
     //System.out.println(player1.playerHand.size());
     //player1.takeTurn();
     System.out.println(player1.playerHand.size());
+
 
 
 
