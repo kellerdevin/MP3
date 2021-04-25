@@ -4,12 +4,13 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Player{
   private LinkedList<Card> playerHand = new LinkedList<Card>();
+  
   private Card playedCard;
   private Card discardCard;
-  private Deck stock;
+  private static Deck stock;
   private int discardSuit;
 
-  Random randomNum = new Random();
+  Random rand = new Random();
 
   public Player(){
     stock = new Deck();
@@ -22,7 +23,7 @@ public class Player{
   }
 //rand.nextInt(52 + 1);
   public Deck takeTurn(){
-    int chance = ThreadLocalRandom.current().nextInt(1, 10 + 1);
+    int chance = rand.nextInt(52 + 1);   //WHY 1-10
     if (chance == 1){
       this.newSuit();
       playerHand.remove();
@@ -61,12 +62,18 @@ public class Player{
     return discardCard;
   }
 
+  
+  //THIS IS BROKEN
   public String toString(){
     return playerHand.toString();
   }
 
-  /*public static void main(String args[]){
+  public static void main(String args[]){
     Player player1 = new Player();
+    System.out.println(player1.playerHand);
+    System.out.println();
+    System.out.println();
     System.out.println(stock);
-  }*/
+
+  }
 }
