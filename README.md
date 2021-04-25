@@ -1,22 +1,23 @@
-README MP2: More Classes
+README MP3: Crazy 8
 
 1. Devin Keller
    2368610
    dkeller@chapman.edu
    CPSC 231-03
-   MP2: More Classes
+   MP3: More Classes
 
-2) Pizza.java
-   PizzaOrder.java
-   PizzaDriver.java
+2) Card.java
+   Deck.java
+   Player.java
+   Game.java
+   Simulation.java
 
 3) N/A
 
-4) https://www.geeksforgeeks.org/how-to-create-array-of-objects-in-java/  helped me create m_order array
+4) N/A
 
 
-5) javac PizzaDriver.java
-   java PizzaDriver 
+5) javac Simulation.java
+   java SimlationDriver
 
 
-I will be using one of my late days for this assignment
