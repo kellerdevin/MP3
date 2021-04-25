@@ -9,6 +9,7 @@ public class Player{
   private Card discardCard;
   private static Deck stock = new Deck();
   private int discardSuit;
+  private int points;
 
 
   Random rand = new Random();
@@ -39,7 +40,7 @@ public class Player{
         else if (playerHand.get(i).getCardValue() == discardCard.getCardValue()){
           discardCard = playedCard;
           playerHand.remove();
-          playerHand.add(stock.deal());
+          //playerHand.add(stock.deal());
         }
       }
       for (int j=0; j<playerHand.size(); j++){
@@ -91,10 +92,11 @@ public class Player{
     System.out.println();
     System.out.println();
     System.out.println(stock);
-    player1.takeTurn();
     //System.out.println(player1.playerHand);
     //System.out.println(player1.playerHand.size());
     //player1.takeTurn();
+    System.out.println(player1.playerHand.size());
+    player1.takeTurn();
     System.out.println(player1.playerHand.size());
 
 
